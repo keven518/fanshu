@@ -41,6 +41,14 @@ Vue.use(VueProgressBar, options)
 
 Vue.use(ElementUI)
 
+const user = api.SDK.User.current()
+console.log('user: ')
+console.log(user)
+
+if (user) {
+  store.commit('setUser', user);
+}
+
 
 /* eslint-disable no-new */
 new Vue({

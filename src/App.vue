@@ -20,6 +20,7 @@ export default {
     this.$Progress.start()
     this.$router.beforeEach((to, from, next) => {
       console.log("$router.beforeEach");
+      console.log(to);
       if (to.meta.progress !== undefined) {
         let meta = to.meta.progress
         this.$Progress.parseMeta(meta)
