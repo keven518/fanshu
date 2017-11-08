@@ -87,7 +87,7 @@ export default {
           user.setEmail(this.user.email);
 
           user.signUp().then((loginUser) => {
-            this.$store.dispatch('setUser', loginUser);
+            this.$store.dispatch('login', loginUser);
             this.$router.go(-1)
             this.$message.success('注册成功！')
           }).catch(error => {
@@ -109,5 +109,20 @@ export default {
   padding: 60px 10%;
   background: #fafafa;
   height: calc(100vh - 180px);
+}
+
+h1{
+  text-align: center;
+  font-weight: 100;
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+.from-panel{
+  width: 50%;
+  margin: 0 auto;
+}
+.oprator{
+  margin-top: 30px;
+  text-align: center;
 }
 </style>

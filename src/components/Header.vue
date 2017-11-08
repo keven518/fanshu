@@ -14,7 +14,7 @@
       </template>
       <template v-else>
         <el-menu-item index="/signUp" class="right"><i class="fa fa-user-o" aria-hidden="true">注册</i></el-menu-item>
-        <el-menu-item index="3" class="right"><i class="fa fa-key" aria-hidden="true">登录</i></el-menu-item>
+        <el-menu-item index="/signIn" class="right"><i class="fa fa-key" aria-hidden="true">登录</i></el-menu-item>
       </template>
     </el-menu>
   </div>
